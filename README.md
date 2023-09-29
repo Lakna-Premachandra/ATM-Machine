@@ -18,6 +18,8 @@ This Banking Application is a command-line banking system implemented in C++, de
 - Change PIN
 - Contact customer support
 - Exit
+  
+<img width="319" alt="ss1" src="https://github.com/MMNLakna/ATM-Machine/assets/136817118/8c4ff483-6216-408c-b0c9-3c60cc4b9ebd">
 
 ### Cash Withdrawal
 
@@ -26,6 +28,9 @@ This Banking Application is a command-line banking system implemented in C++, de
 - Confirm the withdrawal.
 - Receive a transaction receipt (optional).
 - Update the account balance.
+
+<img width="331" alt="ss2" src="https://github.com/MMNLakna/ATM-Machine/assets/136817118/e820857e-c0aa-447d-97d1-9e384e93df05">
+
 
 ### Balance Inquiry
 
