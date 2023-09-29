@@ -422,7 +422,7 @@ void interface() // Function for main interface
     cout << "4. Bill Payment" << endl;
     cout << "5. Money Transfer" << endl;
     cout << "6. Change PIN" << endl;
-    cout << "7. Need Help" << endl;
+    cout << "7. Contact Customer Support" << endl;
     cout << "8. Back" << endl;
     cout << "9. Exit" << endl <<endl;
 
