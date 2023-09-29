@@ -18,6 +18,7 @@ void changePIN();
 
 void balance()//Function for check balance
 {   
+    cout << endl;
     cout << "----------------------------------------" << endl;
     cout << "        Account Balance Inquiry         " << endl;
     cout << "----------------------------------------" << endl;
@@ -54,15 +55,19 @@ void withdrawal()
     cout << "2. Saving account" << endl << endl;
     cout << "Choose your Option : ";
     cin >> option;
+    cout << endl;
     cout << "Enter amount : ";
     cin >> wAmount;
+    cout << endl;
     cout << "Do you want to confirm " << wAmount << " ? (Y/N)";
     cin >> confirm;
+    cout << endl;
 
     while (confirm == "n")
     {
         cout << "Enter Amount: ";
         cin >> wAmount;
+        cout << endl;
         cout << endl;
         cout << "Do you want to confirm " << wAmount << " ? (Y/N) ";
         cin >> confirm;
@@ -171,13 +176,14 @@ void billPayment() // Function for bill payment
     string confirm;
     string receiptConfirm;
 
-    cout << "Select the type of bill to pay:" << endl;
+    cout << "Select the type of bill to pay:" << endl << endl;
     cout << "1. Electricity" << endl;
     cout << "2. Water" << endl;
     cout << "3. Telephone" << endl;
     cout << "4. Insurance" << endl;
-    cout << "5. Back to main menu" << endl;
+    cout << "5. Back to main menu" << endl<< endl;
     cout << "Enter your choice: ";
+    cout << endl;
     
     int billChoice;
     cin >> billChoice;
@@ -200,28 +206,33 @@ void billPayment() // Function for bill payment
             interface();
             
         default:
-            cout << "Invalid choice. Please select a valid option." << endl;
+            cout << "Invalid choice. Please select a valid option." << endl<< endl;
             
     }
 
     cout << "Enter the bill amount: $";
     cin >> billAmount;
+    cout << endl;
+
     cout << "Do you want to confirm the payment of $" << billAmount << " for " << billType << "? (Y/N)";
     cin >> confirm;
+    cout << endl;
 
     if (confirm == "Y" || confirm == "y")
     {
         if (amount >= billAmount)
         {
             amount -= billAmount;
-            cout << "Payment of $" << billAmount << " for " << billType << " successful." << endl;
+            cout << "Payment of $" << billAmount << " for " << billType << " successful." << endl<< endl;
 
             // Print receipt
             cout << "Do you want a receipt for this transaction? (Y/N): ";
             cin >> receiptConfirm;
+            cout << endl;
 
             if (receiptConfirm == "Y" || receiptConfirm == "y")
             {
+                cout << endl;
                 cout << "----------------------------------------" << endl;
                 cout << "           Bill Payment Receipt          " << endl;
                 cout << "----------------------------------------" << endl;
@@ -229,22 +240,24 @@ void billPayment() // Function for bill payment
                 cout << "           Bill Amount: $ " << billAmount << endl;
                 cout << "           Remaining Balance: $ " << amount << endl;
                 cout << "----------------------------------------" << endl;
+                cout << endl;
             }
             cout << endl;
         }
         else
         {
-            cout << "Insufficient balance for bill payment." << endl;
+            cout << "Insufficient balance for bill payment." << endl << endl;
         }
     }
     else
     {
-        cout << "Bill payment canceled." << endl;
+        cout << "Bill payment canceled." << endl << endl;
     }
 
     // Go back to the main menu
     cout << "Do you want to go back to the main menu? (Y/N): ";
     cin >> confirm;
+    cout << endl;
     if (confirm == "Y" || confirm == "y")
     {
         interface();
@@ -267,12 +280,15 @@ void moneyTransfer() // Function for fund transfer
 
     cout << "Enter recipient's account number: ";
     cin >> recipientAccount;
+    cout << endl;
 
     cout << "Enter the amount to transfer: $";
     cin >> transferAmount;
+    cout << endl;
 
     cout << "Do you want to confirm the transfer of $" << transferAmount << " to account " << recipientAccount << "? (Y/N)";
     cin >> confirm;
+    cout << endl;
 
     if (confirm == "Y" || confirm == "y")
     {
@@ -284,9 +300,11 @@ void moneyTransfer() // Function for fund transfer
             // Print receipt
             cout << "Do you want a receipt for this transaction? (Y/N): ";
             cin >> receiptConfirm;
+            cout << endl;
 
             if (receiptConfirm == "Y" || receiptConfirm == "y")
             {
+                cout << endl;
                 cout << "----------------------------------------" << endl;
                 cout << "           Money Transfer Receipt        " << endl;
                 cout << "----------------------------------------" << endl;
@@ -299,17 +317,18 @@ void moneyTransfer() // Function for fund transfer
         }
         else
         {
-            cout << "Insufficient balance for the transfer." << endl;
+            cout << "Insufficient balance for the transfer." << endl << endl;
         }
     }
     else
     {
-        cout << "Transfer canceled." << endl;
+        cout << "Transfer canceled." << endl<< endl;
     }
 
     // Go back to the main menu
     cout << "Do you want to go back to the main menu? (Y/N): ";
     cin >> confirm;
+    cout << endl;
     if (confirm == "Y" || confirm == "y")
     {
         interface();
@@ -326,6 +345,7 @@ void moneyTransfer() // Function for fund transfer
 
 void needHelp() // Function for contact us
 {
+    cout << endl;
     cout << "----------------------------------------" << endl;
     cout << "              Need Help                 " << endl;
     cout << "----------------------------------------" << endl;
@@ -339,6 +359,7 @@ void needHelp() // Function for contact us
     string confirm;
     cout << "Do you want to go back to the main menu? (Y/N): ";
     cin >> confirm;
+    cout << endl;
     
     if (confirm == "Y" || confirm == "y")
     {
@@ -358,12 +379,15 @@ void changePIN() // Function for change pin
     int newPIN;
     cout << "Enter your new PIN: ";
     cin >> newPIN;
+    cout << endl;
 
     pin = newPIN; // Update the PIN
     cout << "PIN changed successfully!" << endl;
+    cout << endl;
 
     //Go back to the main menu
     string confirm;
+    cout << endl;
     cout << "Do you want to go back to the main menu? (Y/N): ";
     cin >> confirm;
     
