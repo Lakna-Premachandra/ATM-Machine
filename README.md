@@ -51,8 +51,7 @@ This Banking Application is a command-line banking system implemented in C++, de
 - Deduct the bill amount from the account balance.
 - Generate a payment receipt (optional).
 
-  <img width="392" alt="ss3" src="https://github.com/MMNLakna/ATM-Machine/assets/136817118/7fb6ccc7-8c6b-4521-8ba9-34079e7ffd12">
-
+<img width="357" alt="ss4" src="https://github.com/MMNLakna/ATM-Machine/assets/136817118/00c7f8f7-72aa-4303-9717-ff74f2308293">
 
 ### Money Transfer
 
@@ -65,7 +64,7 @@ This Banking Application is a command-line banking system implemented in C++, de
 ### Change PIN
 
 - Set a new personal identification number (PIN).
-- Update the PIN successfully.
+- Update the PIN successfully. 
 
 ### Need Help
 
